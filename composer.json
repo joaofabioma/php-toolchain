@@ -1,4 +1,7 @@
 {
+	"scripts": {
+		"stan": "phpstan"
+	},
 	"require-dev": {
 		"phpstan/phpstan": "^1.12"
 	}
