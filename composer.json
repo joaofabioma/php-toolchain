@@ -1,10 +1,27 @@
 {
+	"name": "joaofabioma/php-toolchain",
+	"type": "project",
+	"keywords": [
+		"php",
+		"framework",
+		"toolchain"
+	],
+	"license": "MIT",
+	"require": {
+		"php": "^8.2"
+	},
 	"scripts": {
 		"stan": "phpstan",
-		"phpmd": "phpmd src ansi phpmd.ruleset.xml"
+		"phpmd": "phpmd src ansi phpmd.ruleset.xml",
+		"start": "php -S localhost:8989 ./public/index.php"
 	},
 	"require-dev": {
 		"phpstan/phpstan": "^1.12",
 		"phpmd/phpmd": "^2.15"
+	},
+	"autoload": {
+		"psr-4": {
+			"Src\\": "src/"
+		}
 	}
 }
