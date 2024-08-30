@@ -26,4 +26,14 @@ class Router
 		http_response_code(404);
 		return null;
 	}
+
+	protected function getS($pStr): mixed
+	{
+		try {
+			return $_SERVER[$pStr];
+		} catch (\Exception $e) {
+			error_log($e->getMessage());
+			return null;
+		}
+	}
 }

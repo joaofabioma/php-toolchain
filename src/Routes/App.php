@@ -3,6 +3,7 @@
 namespace Src\Routes;
 
 use Src\Routes\Api;
+use Src\Routes\Router;
 
 class App
 {
@@ -26,7 +27,7 @@ class App
 			$api->start();
 			return;
 		});
-		
+
 		$router->create("POST", "/api", function () {
 			$api = new Api();
 			$api->start();

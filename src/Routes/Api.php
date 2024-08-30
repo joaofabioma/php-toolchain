@@ -2,6 +2,8 @@
 
 namespace Src\Routes;
 
+use Src\Routes\Router;
+
 class Api
 {
 	/**
