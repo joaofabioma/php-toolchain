@@ -27,7 +27,7 @@ class Router
 		return null;
 	}
 
-	protected function getS($pStr): mixed
+	protected function getS(string $pStr): mixed
 	{
 		try {
 			return $_SERVER[$pStr];
